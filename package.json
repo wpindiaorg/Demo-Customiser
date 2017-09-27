@@ -1,0 +1,22 @@
+{
+  "name": "demo-customiser",
+  "version": "0.0.1",
+  "description": "MU (must-use) plugin to customise demo sites for Indian languages on demo.wpindia.org",
+  "dependencies": {
+    "grunt": "^1.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wpindiaorg/Demo-Customiser.git"
+  },
+  "author": "Saurabh Shukla",
+  "license": "GPL-2.0",
+  "bugs": {
+    "url": "https://github.com/wpindiaorg/Demo-Customiser/issues"
+  },
+  "homepage": "https://github.com/wpindiaorg/Demo-Customiser#readme",
+  "devDependencies": {
+    "grunt-contrib-uglify": "^3.1.0",
+    "grunt-wp-i18n": "^1.0.0"
+  }
+}
