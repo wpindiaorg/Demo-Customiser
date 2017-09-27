@@ -2,7 +2,7 @@
 
 /*
   Plugin Name: Demo Customiser
-  Plugin URI: 
+  Plugin URI:
   Description: MU (must-use) plugin to customise demo sites for Indian languages on demo.wpindia.org
   Version: 0.1
   Author: saurabhshukla,
@@ -20,3 +20,13 @@
  * 
  * others may be added later
  */
+
+/**
+ * Plugin's file path
+ */
+define( 'WPIN_DEMO_CUSTOMISER_PATH', plugin_dir_path( __FILE__ ) );
+
+/**
+ * Plugin's url path
+ */
+define( 'WPIN_DEMO_CUSTOMISER_URL', plugin_dir_url( __FILE__ ) );
