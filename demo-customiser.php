@@ -45,6 +45,16 @@ function wpin_dc_localise() {
 	);
 }
 
+// enqueue scripts
+add_action( 'wp_enqueue_scripts', 'wpin_dc_enqueue' );
+
+/**
+ * Enqueues js for frontend
+ */
+function wpin_dc_enqueue() {
+	wp_enqueue_script( 'wpin-dc', WPIN_DC_URL . 'assets/js/wpin-dc.js', array('jquery'), '0.1', true );
+}
+
 // modify theme footer
 add_action( 'wp_footer', 'wpin_dc_theme_footer' );
 
