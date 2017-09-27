@@ -36,6 +36,8 @@ add_action( 'plugins_loaded', 'wpin_dc_localise' );
 
 /**
  * Localises the plugin
+ * 
+ * @since 0.1
  */
 function wpin_dc_localise() {
 	load_plugin_textdomain(
@@ -48,6 +50,8 @@ add_action( 'wp_footer', 'wpin_dc_theme_footer' );
 
 /**
  * Adds sponsor credits to theme footer
+ * 
+ * @since 0.1
  */
 function wpin_dc_theme_footer() {
 	include_once WPIN_DC_PATH . 'templates/theme-footer.php';
