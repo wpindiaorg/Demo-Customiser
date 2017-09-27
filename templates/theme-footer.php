@@ -5,10 +5,8 @@
  * @author Saurabh Shukla <contact.saurabhshukla@gmail.com>
  */
 ?>
-<div class="wpin-dc-theme-footer">
-	<p><?php _e( 'Hosting sponsored by', 'wpin-dc' ); ?>
-		<a href="https://bluehost.in" title="<?php _e( 'BlueHost India', 'wpin-dc' ); ?>">
-			<img src="<?php echo WPIN_DC_URL . 'assets/images/bluehost-in-logo.png'?>" alt="<?php _e( 'BlueHost India', 'wpin-dc' ); ?>">
-		</a>
-	</p> 
-</div>
+<p class="wpin-dc-theme-footer"><?php _e( 'Hosting sponsored by', 'wpin-dc' ); ?>
+	<a href="https://bluehost.in" title="<?php _e( 'BlueHost India', 'wpin-dc' ); ?>">
+		<img src="<?php echo WPIN_DC_URL . 'assets/images/bluehost-in-logo.png' ?>" alt="<?php _e( 'BlueHost India', 'wpin-dc' ); ?>">
+	</a>
+</p>

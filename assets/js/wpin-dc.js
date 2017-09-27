@@ -1,3 +1,3 @@
 jQuery( 'document' ).ready( function( $ ) {
-	$( 'footer.site-footer' ).append( '.wpin-dc-theme-footer' );
+	$( 'footer.site-footer .site-info' ).append( $('.wpin-dc-theme-footer') );
 } );
