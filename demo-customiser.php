@@ -32,7 +32,7 @@ define( 'WPIN_DC_PATH', plugin_dir_path( __FILE__ ) );
 define( 'WPIN_DC_URL', plugin_dir_url( __FILE__ ) );
 
 // initialise translations
-add_action( 'plugins_loaded', 'wpin_dc_localise' );
+add_action( 'muplugins_loaded', 'wpin_dc_localise' );
 
 /**
  * Localises the plugin
@@ -40,8 +40,8 @@ add_action( 'plugins_loaded', 'wpin_dc_localise' );
  * @since 0.1
  */
 function wpin_dc_localise() {
-	load_plugin_textdomain(
-		'demo-customiser', false, WPIN_DC_PATH . '/languages'
+	load_muplugin_textdomain(
+		'demo-customiser', 'languages'
 	);
 }
 
