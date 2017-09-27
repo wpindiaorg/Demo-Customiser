@@ -42,3 +42,13 @@ function wpin_dc_localise() {
 		'wpin-dc', false, WPIN_DC_PATH . '/languages'
 	);
 }
+
+// modify theme footer
+add_action( 'wp_footer', 'wpin_dc_theme_footer' );
+
+/**
+ * Adds sponsor credits to theme footer
+ */
+function wpin_dc_theme_footer() {
+	include_once WPIN_DC_PATH . 'templates/theme-footer.php';
+}
