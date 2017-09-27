@@ -7,7 +7,7 @@
   Version: 0.1
   Author: saurabhshukla,
   Author URI: http://github.com/yapapaya/
-  Text Domain: wpin-dc
+  Text Domain: demo-customiser
   Domain Path: /languages
   License: GNU General Public License v2 or later
  */
@@ -41,7 +41,7 @@ add_action( 'plugins_loaded', 'wpin_dc_localise' );
  */
 function wpin_dc_localise() {
 	load_plugin_textdomain(
-		'wpin-dc', false, WPIN_DC_PATH . '/languages'
+		'demo-customiser', false, WPIN_DC_PATH . '/languages'
 	);
 }
 
