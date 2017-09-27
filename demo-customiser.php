@@ -52,7 +52,7 @@ add_action( 'wp_enqueue_scripts', 'wpin_dc_enqueue' );
  * Enqueues js for frontend
  */
 function wpin_dc_enqueue() {
-	wp_enqueue_script( 'wpin-dc', WPIN_DC_URL . 'assets/js/wpin-dc.js', array('jquery'), '0.1', true );
+	wp_enqueue_script( 'wpin-dc', WPIN_DC_URL . 'assets/js/wpin-dc.js', array( 'jquery' ), '0.1', true );
 }
 
 // modify theme footer
@@ -65,4 +65,20 @@ add_action( 'wp_footer', 'wpin_dc_theme_footer' );
  */
 function wpin_dc_theme_footer() {
 	include_once WPIN_DC_PATH . 'templates/theme-footer.php';
+}
+
+// modify admin footer
+add_filter( 'admin_footer_text', 'wpin_dc_admin_footer' );
+
+/**
+ * Adds sponsor credits to admin footer
+ * 
+ * @param string $thankyou The thank you string in admin footer
+ * @since 0.1
+ */
+function wpin_dc_admin_footer( $thankyou ) {
+	ob_start();
+	include_once WPIN_DC_PATH . 'templates/admin-footer.php';
+	$credits = ob_get_clean();
+	return $thankyou . $credits;
 }
