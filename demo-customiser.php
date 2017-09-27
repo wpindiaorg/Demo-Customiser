@@ -7,7 +7,7 @@
   Version: 0.1
   Author: saurabhshukla,
   Author URI: http://github.com/yapapaya/
-  Text Domain: wpindia-demo
+  Text Domain: wpin-dc
   Domain Path: /languages
   License: GNU General Public License v2 or later
  */
@@ -24,9 +24,21 @@
 /**
  * Plugin's file path
  */
-define( 'WPIN_DEMO_CUSTOMISER_PATH', plugin_dir_path( __FILE__ ) );
+define( 'WPIN_DC_PATH', plugin_dir_path( __FILE__ ) );
 
 /**
  * Plugin's url path
  */
-define( 'WPIN_DEMO_CUSTOMISER_URL', plugin_dir_url( __FILE__ ) );
+define( 'WPIN_DC_URL', plugin_dir_url( __FILE__ ) );
+
+// initialise translations
+add_action( 'plugins_loaded', 'wpin_dc_localise' );
+
+/**
+ * Localises the plugin
+ */
+function wpin_dc_localise() {
+	load_plugin_textdomain(
+		'wpin-dc', false, WPIN_DC_PATH . '/languages'
+	);
+}
